@@ -1,0 +1,355 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    padding: 20px 45px;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+header .header-logo span {
+    color: crimson;
+}
+
+header ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+}
+
+header ul li a.home {
+    color: crimson;
+}
+
+header ul li a:hover {
+    color: white;
+    background-color: crimson;
+}
+
+header ul li a.home:hover {
+    background-color: black;
+    color: white;
+}
+
+/* MAIN */
+/* - Home/Banner Styling */
+.home-banner-section {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    line-height: 20px;
+    margin-bottom: 150px;
+}
+
+.home-banner-section h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.home-banner-section p {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.home-banner-section .button-section button {
+    margin: 2rem;
+    padding: 20px;
+    width: 180px;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-banner-section .button-section button a {
+    text-decoration: none;
+    color: black;
+}
+
+.home-banner-section .button-section button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+/* About Me Styling */
+.about-me-section {
+    width: 100%;
+    height: 480px;
+    background-color: rgb(207, 204, 204);
+    padding-inline: 0;
+    padding: 10px 150px;
+    margin-bottom: 150px;
+}
+
+.about-me-section h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.about-me-section .text-and-picture {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-me-section .text-and-picture .text {
+    width: 70%;
+}
+
+.about-me-section .text-and-picture img {
+    width: 30%;
+    border-radius: 15px;
+}
+
+/* - Hobbies and Interest Section */
+.hobbies-and-interest-section {
+    padding: 30px 50px;
+    margin-bottom: 150px;
+}
+
+.hobbies-and-interest-section h1.header {
+    margin-bottom: 80px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hobbies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.hobbies-list .list img {
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.hobbies-list .list .list-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* - Projects Section */
+.project-section {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(207, 204, 204);
+    padding-inline: 0;
+    padding: 40px 150px;
+    margin-bottom: 150px;
+    align-items: center;
+}
+
+.project-section h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.project-list .project h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.project-list .project .project-text {
+    border-bottom: 1px solid black;
+}
+
+.project-list .project .tools-used,
+.project-list .project .link-logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-list .project .link-logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: all 0.3s ease-in;
+}
+
+.project-list .project .link-logo a:hover {
+    color: crimson;
+}
+
+/* Footer Section */
+footer {
+    padding: 50px 100px 0;
+    text-align: center;
+}
+
+footer div {
+    margin-bottom: 50px;
+}
+
+footer .contact-section h1 {
+    margin-bottom: 30px;
+}
+
+footer .social-media-logo {
+    border-bottom: 1px solid black;
+    padding-bottom: 30px;
+}
+
+footer .social-media-logo a {
+    font-size: 30px;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+footer .social-media-logo a.linkedin:hover {
+    color: #0077B5;
+}
+
+footer .social-media-logo a.wa-square:hover {
+    color: #25D366;
+}
+
+footer .social-media-logo a.messenger:hover {
+    color: purple;
+}
+
+footer .social-media-logo a.discord:hover {
+    color: #5865F2;
+}
+
+footer .social-media-logo a.git-hub:hover {
+    color: #316FF6;
+}
+
+footer .copyright-section {
+    padding-top: 30px;
+}
+
+/* Responsive Mobile */
+@media screen and (max-width: 480px) {
+    * {
+        padding: 10px;
+    }
+
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    .header-logo h1 {
+        font-size: 30px;
+    }
+
+    .header-navbar {
+        display: none;
+    }
+
+    /* Main */
+    main {
+        padding: 0;
+    }
+
+    /* - Home/Banner */
+    .home-banner-section h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .home-banner-section p {
+        line-height: 30px;
+    }
+
+    .home-banner-section .button-section button {
+        width: 200px;
+    }
+
+    .home-banner-section .button-section button a {
+        font-size: 20px;
+    }
+
+    /* - About Me */
+    .about-me-section {
+        padding: 20px;
+        height: fit-content;
+    }
+    
+    .about-me-section .text-and-picture {
+        display: inline-block;
+        gap: 0;
+        width: 100%
+    }
+
+    .about-me-section .text-and-picture .text {
+        text-align: justify;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .about-me-section .text-and-picture img {
+        width: 100%;
+    }
+
+    /* Hobbies and Interest */
+    .hobbies-and-interest-section {
+        padding: 10px;
+    }
+
+    /* Project Section */
+    .project-section {
+        padding: 0;
+    }
+
+    .project-section .project-list .project {
+        width: 100%;
+    }
+
+    .project-section .project-list .project .project-text {
+        font-size: 20px;
+        border-bottom: none;
+    }
+    
+    .project-section .project-list .project .tools-used {
+        gap: 0;
+        padding-top: 0;
+    }
+
+    .project-section .project-list .project .link-logo {
+        gap: 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+    }
+
+    footer .social-media-logo a {
+        margin: 0;
+    }
+}
