@@ -27,6 +27,7 @@ header .header-logo span {
 header ul {
     display: flex;
     gap: 1.5rem;
+    align-items: center;margin-top: 10px;
 }
 
 header ul li {
@@ -104,7 +105,7 @@ header ul li a.home:hover {
     height: 480px;
     background-color: rgb(207, 204, 204);
     padding-inline: 0;
-    padding: 10px 150px;
+    padding: 30px 150px;
     margin-bottom: 150px;
 }
 
@@ -117,6 +118,7 @@ header ul li a.home:hover {
     display: flex;
     gap: 2rem;
     align-items: center;
+    margin-top: 20px;
 }
 
 .about-me-section .text-and-picture .text {
@@ -151,6 +153,7 @@ header ul li a.home:hover {
     width: 350px;
     height: 250px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .hobbies-list .list .list-text {
@@ -173,33 +176,37 @@ header ul li a.home:hover {
     text-align: center;
     font-size: 40px;
     font-weight: 300;
+    margin-bottom: 3rem;
 }
 
-.project-list .project h3 {
-    font-size: 20px;
-    font-weight: 400;
+.project-list .card-body {
+    padding: 20px;
 }
 
-.project-list .project .project-text {
-    border-bottom: 1px solid black;
+.project-list .card-body p.card-text {
+    text-align: justify;
 }
 
-.project-list .project .tools-used,
-.project-list .project .link-logo {
+.project-list .card-website-tools {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
-.project-list .project .link-logo a {
+.project-list .card-website-link a {
     text-decoration: none;
-    color: black;
     font-size: 25px;
-    transition: all 0.3s ease-in;
+    color: black;
+    transition: all 0.3s ease-in-out;
 }
 
-.project-list .project .link-logo a:hover {
-    color: crimson;
+.project-list .card-website-link a:hover {
+    color: crimson
 }
+
+.project-list hr {
+    color: black;
+}
+
 
 /* Footer Section */
 footer {
@@ -318,12 +325,12 @@ footer .copyright-section {
 
     /* Hobbies and Interest */
     .hobbies-and-interest-section {
-        padding: 10px;
+        padding: 0;
     }
 
     /* Project Section */
     .project-section {
-        padding: 0;
+        padding: 20px;
     }
 
     .project-section .project-list .project {
@@ -344,6 +351,15 @@ footer .copyright-section {
         gap: 0;
     }
 
+    .project-list .card-body {
+        padding: 0;
+    }
+
+    .project-section h1 {
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
     /* Footer */
     footer {
         padding: 10px;
@@ -351,5 +367,6 @@ footer .copyright-section {
 
     footer .social-media-logo a {
         margin: 0;
+        font-size: 25px;
     }
 }
